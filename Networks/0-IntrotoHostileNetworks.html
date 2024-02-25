@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Threat Hunting Basics · GitBook</title>
+        <title>Intro to Hostile Networks · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,10 +70,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../SecuringYourself/0-DontGetHacked.html" />
+    <link rel="next" href="1-ProtectYourIPAddress.html" />
     
     
-    <link rel="prev" href="1-AntiVirusBasics.html" />
+    <link rel="prev" href="../PasswordsandAuthentication/8-Miscellaneous.html" />
     
 
     <style>
@@ -455,9 +455,9 @@
         
         
     
-        <li class="chapter " data-level="5.1" data-path="../Networks/0-IntrotoHostileNetworks.html">
+        <li class="chapter active" data-level="5.1" data-path="0-IntrotoHostileNetworks.html">
             
-                <a href="../Networks/0-IntrotoHostileNetworks.html">
+                <a href="0-IntrotoHostileNetworks.html">
             
                     
                     Intro to Hostile Networks
@@ -468,9 +468,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.2" data-path="../Networks/1-ProtectYourIPAddress.html">
+        <li class="chapter " data-level="5.2" data-path="1-ProtectYourIPAddress.html">
             
-                <a href="../Networks/1-ProtectYourIPAddress.html">
+                <a href="1-ProtectYourIPAddress.html">
             
                     
                     Protect Your IP Address
@@ -481,9 +481,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.3" data-path="../Networks/2-IPProtections.html">
+        <li class="chapter " data-level="5.3" data-path="2-IPProtections.html">
             
-                <a href="../Networks/2-IPProtections.html">
+                <a href="2-IPProtections.html">
             
                     
                     IP Protections
@@ -494,9 +494,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.4" data-path="../Networks/3-Encryption.html">
+        <li class="chapter " data-level="5.4" data-path="3-Encryption.html">
             
-                <a href="../Networks/3-Encryption.html">
+                <a href="3-Encryption.html">
             
                     
                     Encryption
@@ -507,9 +507,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="../Networks/4-Metadata.html">
+        <li class="chapter " data-level="5.5" data-path="4-Metadata.html">
             
-                <a href="../Networks/4-Metadata.html">
+                <a href="4-Metadata.html">
             
                     
                     Metadata
@@ -520,9 +520,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.6" data-path="../Networks/5-SoooVPNs.html">
+        <li class="chapter " data-level="5.6" data-path="5-SoooVPNs.html">
             
-                <a href="../Networks/5-SoooVPNs.html">
+                <a href="5-SoooVPNs.html">
             
                     
                     Sooo VPNs
@@ -573,9 +573,9 @@
         
         
     
-        <li class="chapter " data-level="7.1" data-path="0-HowtoTellifYouareHacked.html">
+        <li class="chapter " data-level="7.1" data-path="../DefenseAgainsttheDarkArts/0-HowtoTellifYouareHacked.html">
             
-                <a href="0-HowtoTellifYouareHacked.html">
+                <a href="../DefenseAgainsttheDarkArts/0-HowtoTellifYouareHacked.html">
             
                     
                     How to Tell if You are Hacked
@@ -586,9 +586,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="1-AntiVirusBasics.html">
+        <li class="chapter " data-level="7.2" data-path="../DefenseAgainsttheDarkArts/1-AntiVirusBasics.html">
             
-                <a href="1-AntiVirusBasics.html">
+                <a href="../DefenseAgainsttheDarkArts/1-AntiVirusBasics.html">
             
                     
                     AntiVirus Basics
@@ -599,9 +599,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.3" data-path="2-ThreatHuntingBasics.html">
+        <li class="chapter " data-level="7.3" data-path="../DefenseAgainsttheDarkArts/2-ThreatHuntingBasics.html">
             
-                <a href="2-ThreatHuntingBasics.html">
+                <a href="../DefenseAgainsttheDarkArts/2-ThreatHuntingBasics.html">
             
                     
                     Threat Hunting Basics
@@ -838,7 +838,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Threat Hunting Basics</a>
+        <a href=".." >Intro to Hostile Networks</a>
     </h1>
 </div>
 
@@ -853,26 +853,42 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="threat-hunting-basics">Threat Hunting Basics</h1>
-<iframe allowfullscreen height="360" src="https://www.youtube.com/embed/4HC_isI8TAM?wmode=opaque" width="640"></iframe>  
-
-<p>Sometimes we don&apos;t want to sit around and wait to get an alert from our
-anti-virus or worse, a phone call saying we&apos;ve been ransomwared and the
-bad guys have been on our network for weeks.</p>
-<p>To avoid this, there is a proactive approach known as &quot;threat hunting&quot;
-where the defenders go out into their own network, look through logs,
-and try to find evil.</p>
-<p>As this is their network, they can do a lot of things to increase
-visibility, as well as force attackers to be loud and do distinctly
-attacker-ish actions. Perhaps most importantly, defenders have home team
-advantage and can check for changes and new happenings across their
-logs, which might alert them to bad things that are going on. Because
-they &quot;know normal&quot;, it&apos;s easier for them to &quot;find evil&quot;.</p>
-<p>People always say you should hunt with a threat in mind rather than
-&quot;boiling the ocean&quot;, but both approaches have their benefits. We&apos;ll
-check them out as we go.</p>
-<p>Read this:
-<a href="https://www.crowdstrike.com/cybersecurity-101/threat-hunting/" rel="noopener" target="_blank">https://www.crowdstrike.com/cybersecurity-101/threat-hunting/</a></p>
+                                <h1 id="intro-to-hostile-networks">Intro to Hostile Networks</h1>
+<h1 id=""><iframe allowfullscreen height="360" src="https://www.youtube.com/embed/uvid__KIF08?wmode=opaque" width="640"></iframe></h1>
+<p>Add this to the list of security truisms:</p>
+<p>&quot;Any network connected to the internet must be considered hostile.&quot; Most
+intranets should be considered hostile too.</p>
+<p>But what does &quot;hostile&quot; mean? In this case, the general idea is that if
+computer A wishes to communicate with computer C, that means that they
+need to send all of their traffic through computer B. Gentlemen&apos;s
+agreements not to look at that traffic might have worked on Arpanet, but
+not anymore.</p>
+<p>From Internet Service Providers (ISPs) working with governments to snoop
+on all your traffic, to deep sea submarine cable intercepts to sketchy
+free wifi hotspots, your internet browsing is recorded by a lot of
+people. And when I mean, a lot of people, I mean literally every single
+hop on your way across the internet (remember traceroute?) will have a
+complete log of your connections. They might not have the content if you
+have encrypted your traffic, but they will have records of the date/time
+the request was made, from who, and to where. This is accesssible to
+anyone with access to the logs, whether they own it, pwned it, or have a
+court order. Your IP address is likely shared, but if logs are kept all
+the way down, and they likely do exist, anything can be tracked down to
+you.</p>
+<p>This next section skips over the technical details of network ownage
+(while giving you plenty to research on your own time), and focuses on
+the principles that can protect you and specific steps you can take to
+protect yourself.</p>
+<h1 id="why-network-security-matters">Why Network Security Matters</h1>
+<p>First, let&apos;s get into threat modeling... If you are doing something so
+&apos;fun&apos; that if someone was able to provably demonstrate that you were the
+one behind the keyboard at the time you would go to jail or worse, this
+is the most important of all the sections. But you hopefully don&apos;t fall
+into this category, and more likely are worried about online censorship,
+aka web content filters. That&apos;s how I started.</p>
+<p>So while we mostly care about circumventing censorship, we will also
+teach as if you had to care about bad guys getting your IP address.</p>
+<p>It&apos;s a good thing to know.</p>
 <footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Hoppers Roppers 2024 </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> Date&#xFF1A; 2024-02-25 22:06:00 </span> </footer>
                                 
                                 </section>
@@ -900,12 +916,12 @@ check them out as we go.</p>
 
             
                 
-                <a href="1-AntiVirusBasics.html" class="navigation navigation-prev " aria-label="Previous page: AntiVirus Basics">
+                <a href="../PasswordsandAuthentication/8-Miscellaneous.html" class="navigation navigation-prev " aria-label="Previous page: Miscellaneous">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../SecuringYourself/0-DontGetHacked.html" class="navigation navigation-next " aria-label="Next page: Dont Get Hacked">
+                <a href="1-ProtectYourIPAddress.html" class="navigation navigation-next " aria-label="Next page: Protect Your IP Address">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -916,7 +932,7 @@ check them out as we go.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Threat Hunting Basics","level":"7.3","depth":1,"next":{"title":"Dont Get Hacked","level":"8.1","depth":1,"path":"SecuringYourself/0-DontGetHacked.md","ref":"SecuringYourself/0-DontGetHacked.md","articles":[]},"previous":{"title":"AntiVirus Basics","level":"7.2","depth":1,"path":"DefenseAgainsttheDarkArts/1-AntiVirusBasics.md","ref":"DefenseAgainsttheDarkArts/1-AntiVirusBasics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","github-buttons","editlink","ga","-highlight","bibtex-indexed-cite","page-footer-ex","splitter","copy-code-button","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/hoppersroppers/security/blob/master"},"page-footer-ex":{"copyright":"Hoppers Roppers 2024","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"Date："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"hoppersroppers","repo":"ctf","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-151638088-2"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"","bib":[],"gitbook":"*"},"file":{"path":"DefenseAgainsttheDarkArts/2-ThreatHuntingBasics.md","mtime":"2024-02-25T22:06:00.937Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-25T22:06:34.628Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Intro to Hostile Networks","level":"5.1","depth":1,"next":{"title":"Protect Your IP Address","level":"5.2","depth":1,"path":"Networks/1-ProtectYourIPAddress.md","ref":"Networks/1-ProtectYourIPAddress.md","articles":[]},"previous":{"title":"Miscellaneous","level":"4.9","depth":1,"path":"PasswordsandAuthentication/8-Miscellaneous.md","ref":"PasswordsandAuthentication/8-Miscellaneous.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","github-buttons","editlink","ga","-highlight","bibtex-indexed-cite","page-footer-ex","splitter","copy-code-button","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/hoppersroppers/security/blob/master"},"page-footer-ex":{"copyright":"Hoppers Roppers 2024","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"Date："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"hoppersroppers","repo":"ctf","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-151638088-2"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"","bib":[],"gitbook":"*"},"file":{"path":"Networks/0-IntrotoHostileNetworks.md","mtime":"2024-02-25T22:06:00.937Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-25T22:06:34.628Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

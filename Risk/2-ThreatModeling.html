@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Threat Hunting Basics · GitBook</title>
+        <title>Threat Modeling · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,10 +70,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../SecuringYourself/0-DontGetHacked.html" />
+    <link rel="next" href="3-YourThreatModel.html" />
     
     
-    <link rel="prev" href="1-AntiVirusBasics.html" />
+    <link rel="prev" href="1-Risk.html" />
     
 
     <style>
@@ -213,9 +213,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../Risk/0-CIANA.html">
+        <li class="chapter " data-level="2.1" data-path="0-CIANA.html">
             
-                <a href="../Risk/0-CIANA.html">
+                <a href="0-CIANA.html">
             
                     
                     CIANA
@@ -226,9 +226,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="../Risk/1-Risk.html">
+        <li class="chapter " data-level="2.2" data-path="1-Risk.html">
             
-                <a href="../Risk/1-Risk.html">
+                <a href="1-Risk.html">
             
                     
                     Risk
@@ -239,9 +239,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="../Risk/2-ThreatModeling.html">
+        <li class="chapter active" data-level="2.3" data-path="2-ThreatModeling.html">
             
-                <a href="../Risk/2-ThreatModeling.html">
+                <a href="2-ThreatModeling.html">
             
                     
                     Threat Modeling
@@ -252,9 +252,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="../Risk/3-YourThreatModel.html">
+        <li class="chapter " data-level="2.4" data-path="3-YourThreatModel.html">
             
-                <a href="../Risk/3-YourThreatModel.html">
+                <a href="3-YourThreatModel.html">
             
                     
                     Your Threat Model
@@ -573,9 +573,9 @@
         
         
     
-        <li class="chapter " data-level="7.1" data-path="0-HowtoTellifYouareHacked.html">
+        <li class="chapter " data-level="7.1" data-path="../DefenseAgainsttheDarkArts/0-HowtoTellifYouareHacked.html">
             
-                <a href="0-HowtoTellifYouareHacked.html">
+                <a href="../DefenseAgainsttheDarkArts/0-HowtoTellifYouareHacked.html">
             
                     
                     How to Tell if You are Hacked
@@ -586,9 +586,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="1-AntiVirusBasics.html">
+        <li class="chapter " data-level="7.2" data-path="../DefenseAgainsttheDarkArts/1-AntiVirusBasics.html">
             
-                <a href="1-AntiVirusBasics.html">
+                <a href="../DefenseAgainsttheDarkArts/1-AntiVirusBasics.html">
             
                     
                     AntiVirus Basics
@@ -599,9 +599,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.3" data-path="2-ThreatHuntingBasics.html">
+        <li class="chapter " data-level="7.3" data-path="../DefenseAgainsttheDarkArts/2-ThreatHuntingBasics.html">
             
-                <a href="2-ThreatHuntingBasics.html">
+                <a href="../DefenseAgainsttheDarkArts/2-ThreatHuntingBasics.html">
             
                     
                     Threat Hunting Basics
@@ -838,7 +838,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Threat Hunting Basics</a>
+        <a href=".." >Threat Modeling</a>
     </h1>
 </div>
 
@@ -853,26 +853,65 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="threat-hunting-basics">Threat Hunting Basics</h1>
-<iframe allowfullscreen height="360" src="https://www.youtube.com/embed/4HC_isI8TAM?wmode=opaque" width="640"></iframe>  
+                                <h1 id="threat-modeling">Threat Modeling</h1>
+<iframe allowfullscreen height="360" src="https://www.youtube.com/embed/RAl-pkdwOSg?wmode=opaque" width="640"></iframe>  
 
-<p>Sometimes we don&apos;t want to sit around and wait to get an alert from our
-anti-virus or worse, a phone call saying we&apos;ve been ransomwared and the
-bad guys have been on our network for weeks.</p>
-<p>To avoid this, there is a proactive approach known as &quot;threat hunting&quot;
-where the defenders go out into their own network, look through logs,
-and try to find evil.</p>
-<p>As this is their network, they can do a lot of things to increase
-visibility, as well as force attackers to be loud and do distinctly
-attacker-ish actions. Perhaps most importantly, defenders have home team
-advantage and can check for changes and new happenings across their
-logs, which might alert them to bad things that are going on. Because
-they &quot;know normal&quot;, it&apos;s easier for them to &quot;find evil&quot;.</p>
-<p>People always say you should hunt with a threat in mind rather than
-&quot;boiling the ocean&quot;, but both approaches have their benefits. We&apos;ll
-check them out as we go.</p>
-<p>Read this:
-<a href="https://www.crowdstrike.com/cybersecurity-101/threat-hunting/" rel="noopener" target="_blank">https://www.crowdstrike.com/cybersecurity-101/threat-hunting/</a></p>
+<p>Read this, it&apos;s a pretty entertaining writeup: <a href="https://arstechnica.com/information-technology/2017/07/how-i-learned-to-stop-worrying-mostly-and-love-my-threat-model/" rel="noopener" target="_blank">Sean Gallagher: How I Learned to Stop
+Worrying and Love my Threat Model</a>. I got lunch with the author once
+and he was a super good guy. </p>
+<p><img src="https://files.cdn.thinkific.com/file_uploads/429463/images/d5b/43d/432/1642440354881.jpg" class="fr-dib" srcset="https://files.cdn.thinkific.com/file_uploads/429463/images/d5b/43d/432/1642440354881.jpg?width=1920 1x, https://files.cdn.thinkific.com/file_uploads/429463/images/d5b/43d/432/1642440354881.jpg?width=1920&amp;dpr=2 2x, https://files.cdn.thinkific.com/file_uploads/429463/images/d5b/43d/432/1642440354881.jpg?width=1920&amp;dpr=3 3x" style="width: 300px;"></p>
+<p>Use this page from the good guys at the EFF to help assess what your
+risks are: <a href="https://ssd.eff.org/en/module/assessing-your-risks" rel="noopener" target="_blank">https://ssd.eff.org/en/module/assessing-your-risks</a></p>
+<p>What do you want to protect? Who do you want to protect it from? How
+likely is it that you will need to protect it? How bad are the
+consequences if you fail? How much trouble are you willing to go through
+in order to try to prevent those?</p>
+<ol>
+<li>For this exercise, our list of things we are trying to protect will
+be your email account and your phone&apos;s photos.</li>
+<li>For each, write down where it&#x2019;s kept, who has access to it, and what
+stops others from accessing it.<ul>
+<li>Do this on paper, not electronically.</li>
+</ul>
+</li>
+<li>Think of three possible threat actors who might want to get a hold
+of your data or communications. It might be an individual, a
+government agency, or a corporation.<ul>
+<li>As an important note, you are significantly more likely to be
+&quot;hacked&quot; by someone you know than some random internet stranger.
+This is even more likely to occur with significant others or
+parents who you may not normally consider adversaries.</li>
+</ul>
+</li>
+<li>Think about what each adversary might want to do with your private
+data</li>
+<li>Think about what the likelihood of each adversary coming for that
+data</li>
+<li>Think about what happens to you if the adversary gets that data</li>
+<li>Now try to answer the question, how much trouble are you willing to
+go through in order to prevent loss.</li>
+<li>Think about if you had typed this information rather than written it
+on paper</li>
+<li>What would it take for a hostile entity to capture what you just
+wrote down if it was:<ul>
+<li>On a piece of paper</li>
+<li>A local word document</li>
+<li>A google doc</li>
+</ul>
+</li>
+</ol>
+<p>Now destroy the paper you just wrote on. Or don&apos;t. Decide how much risk
+you incur by keeping it.</p>
+<p><img src="https://files.cdn.thinkific.com/file_uploads/429463/images/706/0ec/17a/1642440464339.jpg" class="fr-dib" srcset="https://files.cdn.thinkific.com/file_uploads/429463/images/706/0ec/17a/1642440464339.jpg?width=1920 1x, https://files.cdn.thinkific.com/file_uploads/429463/images/706/0ec/17a/1642440464339.jpg?width=1920&amp;dpr=2 2x, https://files.cdn.thinkific.com/file_uploads/429463/images/706/0ec/17a/1642440464339.jpg?width=1920&amp;dpr=3 3x" style="width: 300px;"></p>
+<p>One important note is that you might not have anything worth a targeted
+attack personally, but you have access to other things that might be
+interesting to other people. For example, your contact lists can be used
+to identify other, more important targets. Even more dangerous, someone
+could use your account to send phishes to your contacts. A @navy.mil
+address is going to have a significantly higher click rate than some
+random @gmail. You also have access to your network, so someone could
+use you to pivot to a network you have access to.</p>
+<p>Submit any feedback you have on this threat modeling activity.</p>
 <footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Hoppers Roppers 2024 </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> Date&#xFF1A; 2024-02-25 22:06:00 </span> </footer>
                                 
                                 </section>
@@ -900,12 +939,12 @@ check them out as we go.</p>
 
             
                 
-                <a href="1-AntiVirusBasics.html" class="navigation navigation-prev " aria-label="Previous page: AntiVirus Basics">
+                <a href="1-Risk.html" class="navigation navigation-prev " aria-label="Previous page: Risk">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../SecuringYourself/0-DontGetHacked.html" class="navigation navigation-next " aria-label="Next page: Dont Get Hacked">
+                <a href="3-YourThreatModel.html" class="navigation navigation-next " aria-label="Next page: Your Threat Model">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -916,7 +955,7 @@ check them out as we go.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Threat Hunting Basics","level":"7.3","depth":1,"next":{"title":"Dont Get Hacked","level":"8.1","depth":1,"path":"SecuringYourself/0-DontGetHacked.md","ref":"SecuringYourself/0-DontGetHacked.md","articles":[]},"previous":{"title":"AntiVirus Basics","level":"7.2","depth":1,"path":"DefenseAgainsttheDarkArts/1-AntiVirusBasics.md","ref":"DefenseAgainsttheDarkArts/1-AntiVirusBasics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","github-buttons","editlink","ga","-highlight","bibtex-indexed-cite","page-footer-ex","splitter","copy-code-button","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/hoppersroppers/security/blob/master"},"page-footer-ex":{"copyright":"Hoppers Roppers 2024","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"Date："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"hoppersroppers","repo":"ctf","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-151638088-2"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"","bib":[],"gitbook":"*"},"file":{"path":"DefenseAgainsttheDarkArts/2-ThreatHuntingBasics.md","mtime":"2024-02-25T22:06:00.937Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-25T22:06:34.628Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Threat Modeling","level":"2.3","depth":1,"next":{"title":"Your Threat Model","level":"2.4","depth":1,"path":"Risk/3-YourThreatModel.md","ref":"Risk/3-YourThreatModel.md","articles":[]},"previous":{"title":"Risk","level":"2.2","depth":1,"path":"Risk/1-Risk.md","ref":"Risk/1-Risk.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","github-buttons","editlink","ga","-highlight","bibtex-indexed-cite","page-footer-ex","splitter","copy-code-button","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/hoppersroppers/security/blob/master"},"page-footer-ex":{"copyright":"Hoppers Roppers 2024","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"Date："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"hoppersroppers","repo":"ctf","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-151638088-2"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"","bib":[],"gitbook":"*"},"file":{"path":"Risk/2-ThreatModeling.md","mtime":"2024-02-25T22:06:00.941Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-25T22:06:34.628Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

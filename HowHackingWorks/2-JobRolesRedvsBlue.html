@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Threat Hunting Basics · GitBook</title>
+        <title>Job Roles  Red vs Blue · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,10 +70,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../SecuringYourself/0-DontGetHacked.html" />
+    <link rel="next" href="../DefenseAgainsttheDarkArts/0-HowtoTellifYouareHacked.html" />
     
     
-    <link rel="prev" href="1-AntiVirusBasics.html" />
+    <link rel="prev" href="0-CyberKillchain.html" />
     
 
     <style>
@@ -540,9 +540,9 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="../HowHackingWorks/0-CyberKillchain.html">
+        <li class="chapter " data-level="6.1" data-path="0-CyberKillchain.html">
             
-                <a href="../HowHackingWorks/0-CyberKillchain.html">
+                <a href="0-CyberKillchain.html">
             
                     
                     Cyber Killchain
@@ -553,9 +553,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="../HowHackingWorks/2-JobRolesRedvsBlue.html">
+        <li class="chapter active" data-level="6.2" data-path="2-JobRolesRedvsBlue.html">
             
-                <a href="../HowHackingWorks/2-JobRolesRedvsBlue.html">
+                <a href="2-JobRolesRedvsBlue.html">
             
                     
                     Job Roles  Red vs Blue
@@ -573,9 +573,9 @@
         
         
     
-        <li class="chapter " data-level="7.1" data-path="0-HowtoTellifYouareHacked.html">
+        <li class="chapter " data-level="7.1" data-path="../DefenseAgainsttheDarkArts/0-HowtoTellifYouareHacked.html">
             
-                <a href="0-HowtoTellifYouareHacked.html">
+                <a href="../DefenseAgainsttheDarkArts/0-HowtoTellifYouareHacked.html">
             
                     
                     How to Tell if You are Hacked
@@ -586,9 +586,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="1-AntiVirusBasics.html">
+        <li class="chapter " data-level="7.2" data-path="../DefenseAgainsttheDarkArts/1-AntiVirusBasics.html">
             
-                <a href="1-AntiVirusBasics.html">
+                <a href="../DefenseAgainsttheDarkArts/1-AntiVirusBasics.html">
             
                     
                     AntiVirus Basics
@@ -599,9 +599,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="7.3" data-path="2-ThreatHuntingBasics.html">
+        <li class="chapter " data-level="7.3" data-path="../DefenseAgainsttheDarkArts/2-ThreatHuntingBasics.html">
             
-                <a href="2-ThreatHuntingBasics.html">
+                <a href="../DefenseAgainsttheDarkArts/2-ThreatHuntingBasics.html">
             
                     
                     Threat Hunting Basics
@@ -838,7 +838,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Threat Hunting Basics</a>
+        <a href=".." >Job Roles  Red vs Blue</a>
     </h1>
 </div>
 
@@ -853,26 +853,101 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="threat-hunting-basics">Threat Hunting Basics</h1>
-<iframe allowfullscreen height="360" src="https://www.youtube.com/embed/4HC_isI8TAM?wmode=opaque" width="640"></iframe>  
+                                <h1 id="job-roles---red-vs-blue">Job Roles - Red vs Blue</h1>
+<iframe allowfullscreen height="360" src="https://www.youtube.com/embed/LZk4VSDC604?wmode=opaque" width="640"></iframe>  
 
-<p>Sometimes we don&apos;t want to sit around and wait to get an alert from our
-anti-virus or worse, a phone call saying we&apos;ve been ransomwared and the
-bad guys have been on our network for weeks.</p>
-<p>To avoid this, there is a proactive approach known as &quot;threat hunting&quot;
-where the defenders go out into their own network, look through logs,
-and try to find evil.</p>
-<p>As this is their network, they can do a lot of things to increase
-visibility, as well as force attackers to be loud and do distinctly
-attacker-ish actions. Perhaps most importantly, defenders have home team
-advantage and can check for changes and new happenings across their
-logs, which might alert them to bad things that are going on. Because
-they &quot;know normal&quot;, it&apos;s easier for them to &quot;find evil&quot;.</p>
-<p>People always say you should hunt with a threat in mind rather than
-&quot;boiling the ocean&quot;, but both approaches have their benefits. We&apos;ll
-check them out as we go.</p>
-<p>Read this:
-<a href="https://www.crowdstrike.com/cybersecurity-101/threat-hunting/" rel="noopener" target="_blank">https://www.crowdstrike.com/cybersecurity-101/threat-hunting/</a></p>
+<p>No, not the
+<a href="https://www.youtube.com/watch?v=9N8IpxO6rKs" rel="noopener" target="_blank">classic Halo video series</a>.</p>
+<p>In this section we are going to talk about the different jobs that are
+out there, just briefly enough to pique your interest and give you
+context for future lessons, and then I will move on. This is in no way
+an attempt to provide a full list of jobs that are available.</p>
+<h1 id="red-team">Red Team</h1>
+<p>In this simplified world of ours, Red Team means offense and Blue means
+defense. Well, I&apos;ll say this one up front: Everyone wants to be red
+team, but there aren&apos;t any jobs for it... because it is fun as hell.
+Plus, you should know how to defend first because otherwise how the hell
+will you know what you are hiding from. (Oh I know this section will
+piss people off)</p>
+<h3 id="operator">Operator</h3>
+<p>The most pure form of offense, somebody gives you a tool, a target, and
+you put hands on keyboard. Basically no legal jobs exist for this
+outside of the government.</p>
+<h3 id="network-penetration-tester-pentester">Network Penetration Tester (Pentester)</h3>
+<p>It&apos;s like being an operator, but instead of hacking a target, you&apos;re
+paid to focus on a specific organization during what is a called a
+&quot;pentest&quot; to identify their assets, attack them, and write a report on
+your findings. It&apos;s like hacking, if you spent the entire time writing
+documentation.</p>
+<h3 id="physical-penetration-tester">Physical Penetration Tester</h3>
+<p>Like being a network pentester but you try to break into buildings, and
+usually it involves a lot of lying (which you call &quot;social engineering&quot;
+because you&apos;re a professional).</p>
+<h3 id="web-application-pentester">Web Application Pentester</h3>
+<p>It&apos;s like being a network pentester, but you look exclusively for
+vulnerabilities in webapps and attempt to prove impact. Then you write
+it up and give the exploits and bugs to whoever is paying you. If no one
+is paying you, then you can try to do the bug bounty thing and compete
+with everyone else on the internet.</p>
+<h3 id="tool-developer">Tool Developer</h3>
+<p>The people who build the tools required for operators and pentesters to
+do their jobs. For the most part, these people work for pentest
+companies and release their tools as content marketing for everyone else
+to use. And by everyone else, I mean criminals. Great marketing, you
+clowns.</p>
+<h3 id="exploit-developer">Exploit Developer</h3>
+<p>The people who write exploits on various pieces of software and then
+distribute working exploits to operators, pentesters, and often the
+company or software project itself so they can fix the bugs.</p>
+<h1 id="blue">Blue</h1>
+<p>This is where all the hard work is, where the free world is protected,
+and the money gets made. Yes, this is where the vast majority of the
+jobs are. Plus it&apos;s way more fun to work at the top of your field
+legally. Red teams just LARP being operators.</p>
+<h3 id="sysadmins-helpdesk-and-network-engineers">SysAdmins, Helpdesk, and Network Engineers</h3>
+<p>This is the front line of defense, and possibly the most important one.
+Anyone in these roles is in a security job, whether they want to or not.</p>
+<h3 id="security-engineer">Security Engineer</h3>
+<p>These are the people who attempt to architect the network, systems, and
+policies so that attackers have a harder time stealing everything.</p>
+<h3 id="security-analyst">Security Analyst</h3>
+<p>The people who look at logs and alerts and defend the network from
+attackers, 24/7. This is where most of the jobs are and what you should
+focus on.</p>
+<h2 id="incident-response-ir">Incident Response (IR)</h2>
+<p>These are the people who the security analysts call when they&apos;ve
+detected a breach and need to respond to it.</p>
+<h3 id="digital-forensic-analyst">Digital Forensic Analyst</h3>
+<p>Often combined with Incident Response in the acronym DFIR, these are the
+people the IR folks call when they need to find out what happened on a
+network at some point in the past.</p>
+<h3 id="malware-analyst">Malware Analyst</h3>
+<p>These are the people who spend their time reverse engineering malware
+samples that the other analysts find.</p>
+<h3 id="threat-analyst--threat-intel">Threat Analyst / Threat Intel</h3>
+<p>These are the people who provide actionable intelligence to everyone
+else on what the bad guys are doing.</p>
+<h3 id="auditing-and-compliancegovernance-and-policy">Auditing and Compliance/Governance and Policy</h3>
+<p>These are the people who ensure that the security engineers are doing
+the right things</p>
+<h3 id="identity-and-access-management">Identity and Access Management</h3>
+<p>These are the people who ensure that the right people are logging in to
+the right places securely. In a big company, this is absolutely
+critical.</p>
+<h3 id="secure-development">Secure Development</h3>
+<p>While more of a subset of development, some developers are exclusively
+focused on making secure software, using specific processes, tools, and
+sometimes dedicated hardware. If every developer was an expert in secure
+development there&apos;d be a lot less jobs for all the people listed above.</p>
+<h3 id="tool-developer">Tool Developer</h3>
+<p>The people who write the tools required for everyone else to do their
+jobs.</p>
+<p>Alright, hopefully I didn&apos;t piss anyone off too bad with this rundown.
+I&apos;ll be referencing these individuals as I go forward and talk about
+different common attacks.</p>
+<iframe allowfullscreen height="360" src="https://www.youtube.com/embed/ecrwjVGPLeQ?wmode=opaque" width="640"></iframe>  
+
+
 <footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Hoppers Roppers 2024 </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> Date&#xFF1A; 2024-02-25 22:06:00 </span> </footer>
                                 
                                 </section>
@@ -900,12 +975,12 @@ check them out as we go.</p>
 
             
                 
-                <a href="1-AntiVirusBasics.html" class="navigation navigation-prev " aria-label="Previous page: AntiVirus Basics">
+                <a href="0-CyberKillchain.html" class="navigation navigation-prev " aria-label="Previous page: Cyber Killchain">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../SecuringYourself/0-DontGetHacked.html" class="navigation navigation-next " aria-label="Next page: Dont Get Hacked">
+                <a href="../DefenseAgainsttheDarkArts/0-HowtoTellifYouareHacked.html" class="navigation navigation-next " aria-label="Next page: How to Tell if You are Hacked">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -916,7 +991,7 @@ check them out as we go.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Threat Hunting Basics","level":"7.3","depth":1,"next":{"title":"Dont Get Hacked","level":"8.1","depth":1,"path":"SecuringYourself/0-DontGetHacked.md","ref":"SecuringYourself/0-DontGetHacked.md","articles":[]},"previous":{"title":"AntiVirus Basics","level":"7.2","depth":1,"path":"DefenseAgainsttheDarkArts/1-AntiVirusBasics.md","ref":"DefenseAgainsttheDarkArts/1-AntiVirusBasics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","github-buttons","editlink","ga","-highlight","bibtex-indexed-cite","page-footer-ex","splitter","copy-code-button","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/hoppersroppers/security/blob/master"},"page-footer-ex":{"copyright":"Hoppers Roppers 2024","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"Date："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"hoppersroppers","repo":"ctf","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-151638088-2"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"","bib":[],"gitbook":"*"},"file":{"path":"DefenseAgainsttheDarkArts/2-ThreatHuntingBasics.md","mtime":"2024-02-25T22:06:00.937Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-25T22:06:34.628Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Job Roles  Red vs Blue","level":"6.2","depth":1,"next":{"title":"How to Tell if You are Hacked","level":"7.1","depth":1,"path":"DefenseAgainsttheDarkArts/0-HowtoTellifYouareHacked.md","ref":"DefenseAgainsttheDarkArts/0-HowtoTellifYouareHacked.md","articles":[]},"previous":{"title":"Cyber Killchain","level":"6.1","depth":1,"path":"HowHackingWorks/0-CyberKillchain.md","ref":"HowHackingWorks/0-CyberKillchain.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","github-buttons","editlink","ga","-highlight","bibtex-indexed-cite","page-footer-ex","splitter","copy-code-button","expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/hoppersroppers/security/blob/master"},"page-footer-ex":{"copyright":"Hoppers Roppers 2024","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"Date："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false},"bibtex-indexed-cite":{"path":"/"},"github-buttons":{"buttons":[{"user":"hoppersroppers","repo":"ctf","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-151638088-2"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"","bib":[],"gitbook":"*"},"file":{"path":"HowHackingWorks/2-JobRolesRedvsBlue.md","mtime":"2024-02-25T22:06:00.937Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-25T22:06:34.628Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
