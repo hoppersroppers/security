@@ -28,7 +28,7 @@
     "github-buttons": {
       "buttons": [{
         "user": "hoppersroppers",
-        "repo": "ctf",
+        "repo": "security",
         "type": "star",
         "size": "small",
         "count": true
